@@ -18,12 +18,12 @@ public class VideojuegoController {
 	@Autowired
 	VideojuegoServiceImpl videojuegoServiceImpl;
 	
-	@GetMapping("/grupos")
+	@GetMapping("/videojuegos")
 	public List<Videojuego> listVideojuegos(){	
 		return videojuegoServiceImpl.listVideojuegos();	
 	}
 	
-	@GetMapping("/grupos/{id}")
+	@GetMapping("/videojuegos/{id}")
 	public Videojuego VideojuegoXID(@PathVariable(name="id")Long id) {
 		Videojuego videojuegoXID = new Videojuego();
 		videojuegoXID=videojuegoServiceImpl.videojuegoXID(id);
