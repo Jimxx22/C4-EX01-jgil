@@ -32,10 +32,10 @@ public class MensajeController {
 		return mensajeServiceImpl.saveMensaje(mensaje);
 	}
 	
-	@GetMapping("/mensajes/id_grupo/id/{id}")
-	public List<Mensaje> listMensajesGrupo(@PathVariable(name="id")Long id){	
-		return mensajeServiceImpl.listByGroup(id);	
-	}
+//	@GetMapping("/mensajes/id_grupo/id/{id}")
+//	public List<Mensaje> listByGroup(@PathVariable(name="id")Long id){	
+//		return mensajeServiceImpl.findByIdGroup(id);	
+//	}
 	
 	@GetMapping("/mensajes/{id}")
 	public Mensaje MensajeXID(@PathVariable(name="id")Long id) {

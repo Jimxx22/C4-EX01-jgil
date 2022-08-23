@@ -10,5 +10,5 @@ import com.c6.ex01.dto.Videojuego;
 public interface IGrupoDAO extends JpaRepository<Grupo, Long>{
 
 	//Listar grupo or campo nombre
-	public List<Grupo> findByGame(Long idVideojuego);
+	//public List<Grupo> findByGame(Long idVideojuego);
 }

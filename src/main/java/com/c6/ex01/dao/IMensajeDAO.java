@@ -9,6 +9,6 @@ import com.c6.ex01.dto.Videojuego;
 
 public interface IMensajeDAO extends JpaRepository<Mensaje, Long>{
 
-	//Listar clientes or campo nombre
-	public List<Mensaje> findByGroup(Long id);
+	//Listar mensajes or campo nombre
+	//public List<Mensaje> findByIdGroup(Long id);
 }

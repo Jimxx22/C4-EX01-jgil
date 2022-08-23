@@ -26,11 +26,11 @@ public class MensajeServiceImpl implements IMensajeService{
 		return iMensajeDAO.save(mensaje);
 	}
 	
-	@Override
-	public List<Mensaje> listByGroup(Long id) {
-		// TODO Auto-generated method stub
-		return iMensajeDAO.findByGroup(id);
-	}
+//	@Override
+//	public List<Mensaje> findByIdGroup(Long id) {
+//		// TODO Auto-generated method stub
+//		return iMensajeDAO.findByIdGroup(id);
+//	}
 
 	@Override
 	public Mensaje mensajeXID(Long id) {
