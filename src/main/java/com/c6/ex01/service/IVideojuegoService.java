@@ -8,11 +8,7 @@ public interface IVideojuegoService {
 
 	public List<Videojuego> listVideojuegos(); // List all the Videojuegos
 	
-	public Videojuego saveVideojuego(Videojuego videojuego); // Save a Videojuego
-	
 	public Videojuego videojuegoXID(Long id); // List one Videojuego by id
-	
-	public Videojuego updateVideojuego(Videojuego videojuego); // Update Videojuego
 	
 	public void deleteVideojuego(Long id); // Delete Videojuego by id
 }

@@ -21,21 +21,9 @@ public class VideojuegoServiceImpl implements IVideojuegoService{
 	}
 
 	@Override
-	public Videojuego saveVideojuego(Videojuego videojuego) {
-		// TODO Auto-generated method stub
-		return iVideojuegoDAO.save(videojuego);
-	}
-
-	@Override
 	public Videojuego videojuegoXID(Long id) {
 		// TODO Auto-generated method stub
 		return iVideojuegoDAO.findById(id).get();
-	}
-
-	@Override
-	public Videojuego updateVideojuego(Videojuego videojuego) {
-		// TODO Auto-generated method stub
-		return iVideojuegoDAO.save(videojuego);
 	}
 
 	@Override

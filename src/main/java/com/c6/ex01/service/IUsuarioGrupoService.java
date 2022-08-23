@@ -12,7 +12,5 @@ public interface IUsuarioGrupoService {
 	
 	public UsuarioGrupo usuarioGrupoXID(Long id); // List one UsuarioGrupo by id
 	
-	public UsuarioGrupo updateUsuarioGrupo(UsuarioGrupo usuarioGrupo); // Update UsuarioGrupo
-	
 	public void deleteUsuarioGrupo(Long id); // Delete UsuarioGrupo by id
 }

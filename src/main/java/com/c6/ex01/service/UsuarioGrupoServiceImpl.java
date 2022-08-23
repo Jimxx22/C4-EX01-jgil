@@ -33,12 +33,6 @@ public class UsuarioGrupoServiceImpl implements IUsuarioGrupoService{
 	}
 
 	@Override
-	public UsuarioGrupo updateUsuarioGrupo(UsuarioGrupo usuarioGrupo) {
-		// TODO Auto-generated method stub
-		return iUsuarioGrupoDAO.save(usuarioGrupo);
-	}
-
-	@Override
 	public void deleteUsuarioGrupo(Long id) {
 		// TODO Auto-generated method stub
 		iUsuarioGrupoDAO.deleteById(id);
