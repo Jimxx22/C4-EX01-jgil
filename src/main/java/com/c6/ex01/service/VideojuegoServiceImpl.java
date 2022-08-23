@@ -32,4 +32,10 @@ public class VideojuegoServiceImpl implements IVideojuegoService{
 		iVideojuegoDAO.deleteById(id);
 	}
 
+	@Override
+	public Videojuego listByName(String nom) {
+		// TODO Auto-generated method stub
+		return iVideojuegoDAO.findByName(nom);
+	}
+
 }

@@ -9,6 +9,6 @@ import com.c6.ex01.dto.Videojuego;
 public interface IVideojuegoDAO extends JpaRepository<Videojuego, Long>{
 	
 	//Listar videojuego por campo nombre
-	//public List<Videojuego> findByNombre(String nombre);
+	public Videojuego findByName(String nombre);
 
 }

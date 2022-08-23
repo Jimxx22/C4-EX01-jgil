@@ -27,6 +27,11 @@ public class GrupoController {
 		return grupoServiceImpl.listGrupos();	
 	}
 	
+//	@GetMapping("/grupos/id_videojuego/id/{id}")
+//	public List<Grupo> listGruposByGame(@PathVariable(name="id")Long id){	
+//		return grupoServiceImpl.listGruposByGame(id);	
+//	}
+	
 	@PostMapping("/grupos")
 	public Grupo saveGrupo(@RequestBody Grupo grupo) {
 		return grupoServiceImpl.saveGrupo(grupo);

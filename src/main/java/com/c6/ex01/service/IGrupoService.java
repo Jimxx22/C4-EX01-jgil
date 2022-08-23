@@ -8,6 +8,8 @@ public interface IGrupoService {
 	
 	public List<Grupo> listGrupos(); // List all the Grupos
 	
+	//public List<Grupo> listGruposByGame(Long id); // List all the Grupos
+	
 	public Grupo saveGrupo(Grupo grupo); // Save a Grupo
 	
 	public Grupo grupoXID(Long id); // List one Grupo by id

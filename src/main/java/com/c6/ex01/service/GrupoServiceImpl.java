@@ -44,4 +44,9 @@ public class GrupoServiceImpl implements IGrupoService{
 		iGrupoDAO.deleteById(id);
 	}
 
+//	@Override
+//	public List<Grupo> listGruposByGame(Long id) {
+//		// TODO Auto-generated method stub
+//		return iGrupoDAO.findByIdVideojuego(id);
+//	}
 }

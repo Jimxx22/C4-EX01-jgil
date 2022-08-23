@@ -30,4 +30,9 @@ public class VideojuegoController {
 		
 		return videojuegoXID;
 	}
+	
+	@GetMapping("/videojuegos/name/{nom}")
+	public Videojuego listByName(@PathVariable(name="nom")String nom){	
+		return videojuegoServiceImpl.listByName(nom);	
+	}
 }

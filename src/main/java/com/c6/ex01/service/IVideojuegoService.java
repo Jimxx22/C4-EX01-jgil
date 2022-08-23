@@ -8,6 +8,8 @@ public interface IVideojuegoService {
 
 	public List<Videojuego> listVideojuegos(); // List all the Videojuegos
 	
+	public Videojuego listByName(String name);
+	
 	public Videojuego videojuegoXID(Long id); // List one Videojuego by id
 	
 	public void deleteVideojuego(Long id); // Delete Videojuego by id
