@@ -1,9 +1,9 @@
 # C4-EX01-jgil
 
-##ENDPOINTS
+## ENDPOINTS
 
 
-###Grupo
+### Grupo
 
 GET -> https://jgv-c4-ex1.herokuapp.com/api/grupos
 
@@ -16,7 +16,7 @@ PUT -> https://jgv-c4-ex1.herokuapp.com/api/grupos/{id}
 DELETE -> https://jgv-c4-ex1.herokuapp.com/api/grupos/{id}
 
 
-###Mensaje
+### Mensaje
 
 GET -> https://jgv-c4-ex1.herokuapp.com/api/mensajes
 
@@ -29,7 +29,7 @@ PUT -> https://jgv-c4-ex1.herokuapp.com/api/mensajes/{id}
 DELETE -> https://jgv-c4-ex1.herokuapp.com/api/mensajes/{id}
 
 
-###Usuario
+### Usuario
 
 GET -> https://jgv-c4-ex1.herokuapp.com/api/usuarios/{id}
 
@@ -38,7 +38,7 @@ POST -> https://jgv-c4-ex1.herokuapp.com/api/usuarios
 PUT -> https://jgv-c4-ex1.herokuapp.com/api/usuarios/{id}
 
 
-###UsuarioGrupo
+### UsuarioGrupo
 
 GET -> https://jgv-c4-ex1.herokuapp.com/api/usuariosGrupos
 
@@ -49,7 +49,7 @@ POST -> https://jgv-c4-ex1.herokuapp.com/api/usuariosGrupos
 DELETE -> https://jgv-c4-ex1.herokuapp.com/api/usuariosGrupos/{id}
 
 
-###Videojuego
+### Videojuego
 
 GET -> https://jgv-c4-ex1.herokuapp.com/api/videojuegos
 
