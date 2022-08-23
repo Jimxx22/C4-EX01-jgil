@@ -49,9 +49,9 @@ public class VideojuegoController {
 	public String deleteGrupo(@PathVariable(name="id")Long id) {
 		try {
 			videojuegoServiceImpl.deleteVideojuego(id);
-			return "Grupo borrado";
+			return "Videojuego borrado";
 		} catch (Exception e) {
-			return "Este grupo no se puede borrar";
+			return "Este Videojuego no se puede borrar";
 		}
 	}
 }
