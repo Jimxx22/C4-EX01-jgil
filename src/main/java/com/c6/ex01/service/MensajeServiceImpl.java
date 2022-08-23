@@ -3,10 +3,12 @@ package com.c6.ex01.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.c6.ex01.dao.IMensajeDAO;
 import com.c6.ex01.dto.Mensaje;
 
+@Service
 public class MensajeServiceImpl implements IMensajeService{
 	
 	@Autowired

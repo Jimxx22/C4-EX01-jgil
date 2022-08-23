@@ -3,10 +3,12 @@ package com.c6.ex01.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.c6.ex01.dao.IVideojuegoDAO;
 import com.c6.ex01.dto.Videojuego;
 
+@Service
 public class VideojuegoServiceImpl implements IVideojuegoService{
 	
 	@Autowired
