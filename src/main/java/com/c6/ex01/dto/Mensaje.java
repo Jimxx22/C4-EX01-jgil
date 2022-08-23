@@ -33,8 +33,6 @@ public class Mensaje {
 	@ManyToOne
 	@JoinColumn(name="id_grupo")
 	private Videojuego id_grupo;
-	
-	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 
 	/**
 	 * 
@@ -53,7 +51,6 @@ public class Mensaje {
 	public Mensaje(Long id, String contenido, Usuario id_usuario, Videojuego id_grupo) {
 		this.id = id;
 		this.contenido = contenido;
-		this.date_mensaje = dtf.format(LocalDateTime.now());
 		this.id_usuario = id_usuario;
 		this.id_grupo = id_grupo;
 	}
@@ -84,20 +81,6 @@ public class Mensaje {
 	 */
 	public void setContenido(String contenido) {
 		this.contenido = contenido;
-	}
-
-	/**
-	 * @return the date_mensaje
-	 */
-	public String getDate_mensaje() {
-		return date_mensaje;
-	}
-
-	/**
-	 * @param date_mensaje the date_mensaje to set
-	 */
-	public void setDate_mensaje() {
-		this.date_mensaje = dtf.format(LocalDateTime.now());
 	}
 
 	/**

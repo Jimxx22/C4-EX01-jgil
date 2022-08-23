@@ -48,7 +48,6 @@ public class MensajeController {
 		mensajeSel=mensajeServiceImpl.mensajeXID(id);
 		
 		mensajeSel.setContenido(mensaje.getContenido());
-		mensajeSel.setDate_mensaje();
 		
 		mensajeAct=mensajeServiceImpl.updateMensaje(mensajeSel);
 		

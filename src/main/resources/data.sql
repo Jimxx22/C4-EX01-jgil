@@ -36,7 +36,7 @@ Create table grupos(
 Create table mensajes(
 	id int auto_increment,
 	contenido varchar(255) not null,
-    date_mensaje datetime not null,
+    date_mensaje datetime not null default now(),
 	id_usuario int,
     id_grupo int,
 	primary key (id),
