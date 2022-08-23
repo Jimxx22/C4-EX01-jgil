@@ -25,13 +25,19 @@ public class MensajeServiceImpl implements IMensajeService{
 		// TODO Auto-generated method stub
 		return iMensajeDAO.save(mensaje);
 	}
+	
+	@Override
+	public List<Mensaje> listByGroup(Long id) {
+		// TODO Auto-generated method stub
+		return iMensajeDAO.findByGroup(id);
+	}
 
 	@Override
 	public Mensaje mensajeXID(Long id) {
 		// TODO Auto-generated method stub
 		return iMensajeDAO.findById(id).get();
 	}
-
+	
 	@Override
 	public Mensaje updateMensaje(Mensaje mensaje) {
 		// TODO Auto-generated method stub
@@ -43,5 +49,4 @@ public class MensajeServiceImpl implements IMensajeService{
 		// TODO Auto-generated method stub
 		iMensajeDAO.deleteById(id);
 	}
-
 }

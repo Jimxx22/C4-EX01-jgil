@@ -11,6 +11,8 @@ public interface IMensajeService {
 	
 	public Mensaje saveMensaje(Mensaje mensaje); // Save a Mensaje
 	
+	public List<Mensaje> listByGroup(Long id); // List all the Mensaje
+	
 	public Mensaje mensajeXID(Long id); // List one Mensaje by id
 	
 	public Mensaje updateMensaje(Mensaje mensaje); // Update Mensaje
