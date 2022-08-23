@@ -2,7 +2,10 @@ package com.c6.ex01.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,10 +20,12 @@ public class UsuarioController {
 	@Autowired
 	UsuarioServiceImpl usuarioServiceImpl;
 	
+	@PostMapping("/usuarios")
 	public Usuario saveUsuario(@RequestBody Usuario usuario) {
 		return usuarioServiceImpl.saveUsuario(usuario);
 	}
 	
+	@GetMapping("/usuarios/{id}")
 	public Usuario UsuarioXID(@PathVariable(name="id")Long id) {
 		Usuario usuarioXID = new Usuario();
 		usuarioXID=usuarioServiceImpl.usuarioXID(id);
@@ -28,6 +33,7 @@ public class UsuarioController {
 		return usuarioXID;
 	}
 	
+	@PutMapping("/usuarios/{id}")
 	public Usuario updateUsuario(@PathVariable(name="id")Long id, @RequestBody Usuario usuario) {
 		Usuario usuarioSel = new Usuario();
 		Usuario usuarioAct = new Usuario();
