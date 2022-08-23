@@ -38,4 +38,10 @@ public class VideojuegoServiceImpl implements IVideojuegoService{
 		return iVideojuegoDAO.findByName(nom);
 	}
 
+	@Override
+	public Videojuego saveVideojuego(Videojuego videojuego) {
+		// TODO Auto-generated method stub
+		return iVideojuegoDAO.save(videojuego);
+	}
+
 }
